@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    min-height: 350px;
+}
+
+.stats {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255,255,255,0.95);
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    max-width: 90vw;
+    text-align: center;
+    word-break: break-word;
+}
+
+@media (max-width: 600px) {
+    .stats {
+        font-size: 1em;
+        padding: 6px 6vw;
+        top: 6px;
+        border-radius: 6px;
+        max-width: 98vw;
+    }
+    #map {
+        min-height: 250px;
+    }
+}
